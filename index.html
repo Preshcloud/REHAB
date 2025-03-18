@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehabilitation Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, #0066ff, #00ccff);
+            color: white;
+            padding: 20px 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideUp 1s ease-in-out forwards;
+        }
+        button {
+            background: #0066ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hope Rehabilitation Center</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Hope Rehabilitation Center</h2>
+        <p>Your journey to recovery starts here.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide compassionate and professional care to help individuals recover and rebuild their lives.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Physical Therapy</li>
+            <li>Mental Health Counseling</li>
+            <li>Drug and Alcohol Recovery</li>
+            <li>Group Therapy</li>
+        </ul>
+    </section>
+    
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"Hope Rehabilitation Center changed my life! The support and guidance I received were invaluable." - John Doe</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Hope Rehabilitation Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
